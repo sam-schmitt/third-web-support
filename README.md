@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Thirdweb Support Demo
 
 ## Getting Started
 
-First, run the development server:
+1. First get your server ready by installing all dependencies
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   ```bash
+   yarn install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Then adjust your config.ts file to include your ThirdWeb clientId
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Then start your development server
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   yarn dev
+   ```
 
-## Learn More
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-To learn more about Next.js, take a look at the following resources:
+5. Now connect to a wallet
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+6. Then issue a prompt for simple transactions across multiple chains
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   - Swap 1 USDC for DAI (both on arbitrum) and 1 USDC for DAI (both on optimism)
 
-## Deploy on Vercel
+7. Wait for the data to fully load. You should see a large object/array of data presented on screen when it is finished.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+8. Then click the confirm button on the bottom of the page.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+9. Then observe the web console to see the errors thrown and the failure of the ThirdWeb client to switch chains
