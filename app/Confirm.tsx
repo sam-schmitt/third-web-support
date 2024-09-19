@@ -353,6 +353,7 @@ export function ConfirmButton({
 			>
 				Confirm
 			</button>
+			<p>{JSON.stringify(data, null, 2)}</p>
 		</div>
 	);
 }

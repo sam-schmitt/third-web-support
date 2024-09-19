@@ -107,7 +107,6 @@ export default function Prompt({
 			/>
 			{chatLoading && <p>DATA IS LOADING</p>}
 			<button onClick={handleSubmit}>Send Prompt</button>
-			<p>{JSON.stringify(data, null, 2)}</p>
 		</div>
 	);
 }
